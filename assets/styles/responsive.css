@@ -1,0 +1,17 @@
+/*  <=360px */
+@media (max-width: 22.5rem) {
+  .box {
+    width: 80%;
+  }
+
+  .box .inputBox input,
+  .validation ul li {
+    font-size: 15px;
+  }
+
+  .validation ul li img,
+  .box .inputBox img {
+    width: 22px;
+    height: 22px;
+  }
+}

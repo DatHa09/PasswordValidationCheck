@@ -1,0 +1,105 @@
+:root {
+  --red: #f5222d;
+  --green: #00fe9c;
+  --black: #000;
+  --white: #fff;
+  --blue: #8cccff;
+  --dark-blue: #376488;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  background: var(--blue);
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.box .inputBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background: var(--white);
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.box .inputBox input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 4px;
+  font-size: 16px;
+}
+
+.box .inputBox #toggleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.box .inputBox img {
+  width: 24px;
+  height: 24px;
+}
+
+.validation {
+  display: none;
+  position: absolute;
+  padding: 8px 10px;
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 8px;
+  background: var(--dark-blue);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.validation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.validation ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  list-style: none;
+  color: var(--white);
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.validation ul li.valid {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.validation ul li.valid img {
+  content: url("../image/form/TickCircleGreen.png");
+}
+
+.validation ul li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+}
