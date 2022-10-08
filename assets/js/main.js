@@ -58,8 +58,3 @@ password.onkeyup = (e) => {
     ? minLength.classList.add("valid")
     : minLength.classList.remove("valid");
 };
-
-// show validation box when input focused
-password.onfocus = (e) => {
-  validationBox.style.display = "block";
-};
